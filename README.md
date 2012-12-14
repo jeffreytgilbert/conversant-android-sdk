@@ -1,4 +1,4 @@
-android-sdk
+Greystripe SDK for Android
 ===========
 
-Greystripe Android SDK
+The Greystripe SDK for Android provides a simple way to monetize your game or application via fullscreen interstitial and banner ads on the Android platform.
