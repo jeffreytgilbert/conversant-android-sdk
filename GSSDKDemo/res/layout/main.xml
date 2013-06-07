@@ -1,47 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:gs="http://schemas.android.com/apk/lib/com.greystripe.sdk"
-    android:orientation="vertical"
-    android:layout_width="wrap_content"
-    android:layout_height="fill_parent">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
 
-<TextView  
-    android:id="@+id/textField"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" android:text="Robots can be dangerous, but they do love our rich media ads."/>
-    
-<Button
-    android:id="@+id/displayFullscreenButton"
-    android:onClick="displayFullscreenClicked"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="10sp"
-    android:text="Display Fullscreen" android:layout_gravity="center_horizontal"/> 
+    <TextView
+        android:id="@+id/textField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/robots" />
 
-<Button
-    android:id="@+id/fetchFullscreenButton"
-    android:onClick="fetchFullscreenClicked"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="10sp"
-    android:text="Fetch Fullscreen" android:layout_gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/fetchFullscreenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:onClick="fetchFullscreenClicked"
+        android:text="@string/fetch_fullscreen" />
 
-<Button
-    android:id="@+id/refreshBannerButton"
-    android:onClick="refreshBannerClicked"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="10sp"
-    android:text="Banner Refresh" android:layout_gravity="center_horizontal"/>
-<TextView  
-    android:id="@+id/textField"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" android:text="Banner should appear below."/>
-       	
-<com.greystripe.sdk.GSMobileBannerAdView
-    android:id="@+id/gsBanner"
-    android:layout_width="320dp"
-    android:layout_height="50dp"
-    gs:autoload="false"/>
-    
+    <Button
+        android:id="@+id/displayFullscreenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10sp"
+        android:onClick="displayFullscreenClicked"
+        android:text="@string/display_fullscreen" />
+
+    <Button
+        android:id="@+id/refreshBannerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30sp"
+        android:onClick="refreshBannerClicked"
+        android:text="@string/fetch_banner" />
+
+    <TextView
+        android:id="@+id/textFieldBanner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20sp"
+        android:gravity="center"
+        android:text="@string/banner_instructions" />
+
+    <com.greystripe.sdk.GSMobileBannerAdView
+        android:id="@+id/gsBanner"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        gs:autoload="false" />
+
 </LinearLayout>
