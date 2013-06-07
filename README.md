@@ -19,4 +19,4 @@ For the latest, up-to-date information on Android SDK features and bug fixes, vi
 
 LICENSE
 
-The Greystripe SDK for Android is licensed under the Apache License, Version 2.0 [http://www.apache.org/licenses/LICENSE-2.0.html](http://www.apache.org/licenses/LICENSE-2.0.html)
+The Greystripe SDK for Android is licensed under the Apache License, Version 2.0 [http://www.apache.org/licenses/LICENSE-2.0.html](http://www.apache.org/licenses/LICENSE-2.0.html) 
