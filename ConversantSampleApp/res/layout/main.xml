@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:gs="http://schemas.android.com/apk/lib/com.greystripe.sdk"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="${packageName}.${activityClass}" >
+
+    <Button
+        android:id="@+id/fetchFullscreenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:onClick="fetchFullscreenClicked"
+        android:text="@string/fetch_fullscreen" />
+
+    <Button
+        android:id="@+id/displayFullscreenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:onClick="displayFullscreenClicked"
+        android:text="@string/display_fullscreen" />
+
+    <Button
+        android:id="@+id/refreshBannerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="refreshBannerClicked"
+        android:text="@string/fetch_banner" />
+
+    <!-- 320x50 Banner View Example -->
+    <com.greystripe.sdk.GSMobileBannerAdView
+        android:id="@+id/gsBanner"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        gs:autoload="false" />
+
+     <!-- 300x250 Banner View Example -->
+     <!-- <com.greystripe.sdk.GSMediumRectangleAdView
+        android:id="@+id/gsMedRec"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        gs:autoload="false" /> -->
+
+     <!-- 728x90 Banner View Example -->
+     <!-- <com.greystripe.sdk.GSLeaderboardAdView
+        android:id="@+id/gsLeaderboard"
+        android:layout_width="728dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        gs:autoload="false" /> -->
+        
+</LinearLayout>

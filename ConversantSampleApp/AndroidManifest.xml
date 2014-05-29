@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.conversantmedia.sdksample"
+    android:versionCode="1"
+    android:versionName="2.4.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <!-- Required Conversant SDK permissions. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Optional Conversant SDK permissions. Note CAMERA and WRITE_EXTERNAL_STORAGE must be used together -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+		
+        <!-- Required by Conversant SDK for fullscreen interstitials -->
+		<activity
+            android:name="com.greystripe.sdk.GSFullscreenActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" >
+        </activity>
+        
+        <activity
+            android:name="com.conversantmedia.sdksample.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Conversant SDK App ID -->
+        <meta-data
+            android:name="gs_guid"
+            android:value="fe50c66d-43ca-455f-9144-a11085bdbbe5" />
+        
+        <!-- Google Advertising ID -->
+        <!-- See https://developer.android.com/google/play-services/id.html for more details  -->
+        <!-- Library Project at <android-sdk>/extras/google/google_play_services/libproject/google-play-services_lib/  -->
+        <!-- <meta-data android:name="com.google.android.gms.version"
+                   android:value="@integer/google_play_services_version" /> -->
+                   
+    </application>
+
+</manifest>

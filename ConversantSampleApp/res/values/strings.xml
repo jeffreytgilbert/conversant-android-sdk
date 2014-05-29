@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Conversant</string>
+    <string name="fetch_fullscreen">Fetch Fullscreen</string>
+    <string name="display_fullscreen">Display Fullscreen</string>
+    <string name="fetch_banner">Fetch Banner</string>
+
+</resources>
