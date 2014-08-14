@@ -148,7 +148,7 @@ An interface for listeners who want to be notified of ad receipt, clicks, and
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>&nbsp;void</CODE></FONT></TD>
 <TD><CODE><B><A HREF="../../../com/greystripe/sdk/GSAdListener.html#onAdResize(com.greystripe.sdk.GSAd, com.greystripe.sdk.AdPosition)">onAdResize</A></B>(<A HREF="../../../com/greystripe/sdk/GSAd.html" title="interface in com.greystripe.sdk">GSAd</A>&nbsp;ad,
-           <A HREF="../../../com/greystripe/sdk/AdPosition.html" title="class in com.greystripe.sdk">AdPosition</A>&nbsp;newPosition)</CODE>
+           int x, int y, int width, int height)</CODE>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called after a banner ad has been resized.</TD>
@@ -278,8 +278,7 @@ void <B>onAdCollapse</B>(<A HREF="../../../com/greystripe/sdk/GSAd.html" title="
 <A NAME="onAdResize(com.greystripe.sdk.GSAd, com.greystripe.sdk.AdPosition)"><!-- --></A><H3>
 onAdResize</H3>
 <PRE>
-void <B>onAdResize</B>(<A HREF="../../../com/greystripe/sdk/GSAd.html" title="interface in com.greystripe.sdk">GSAd</A>&nbsp;ad,
-                <A HREF="../../../com/greystripe/sdk/AdPosition.html" title="class in com.greystripe.sdk">AdPosition</A>&nbsp;newPosition)</PRE>
+void <B>onAdResize</B>(<A HREF="../../../com/greystripe/sdk/GSAd.html" title="interface in com.greystripe.sdk">GSAd</A>&nbsp;ad, int x, int y, int width, int height)</PRE>
 <DL>
 <DD>Called after a banner ad has been resized.
  <p/>

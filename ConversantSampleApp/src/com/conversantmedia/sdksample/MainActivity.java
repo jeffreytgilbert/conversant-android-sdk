@@ -133,7 +133,7 @@ public class MainActivity extends Activity {
 		
 		
 		@Override
-		public void onAdResize(GSAd ad, AdPosition newPosition) {
+		public void onAdResize(GSAd ad, int x, int y, int width, int height) {
 			Toast.makeText(MainActivity.this.getApplicationContext(),
 					"Ad Resized!", Toast.LENGTH_SHORT).show();
 		}
@@ -187,7 +187,7 @@ public class MainActivity extends Activity {
 		}
 
 		@Override
-		public void onAdResize(GSAd ad, AdPosition newPosition) {
+		public void onAdResize(GSAd ad, int x, int y, int width, int height) {
 			Toast.makeText(MainActivity.this.getApplicationContext(),
 					"Ad Resized!", Toast.LENGTH_SHORT).show();
 		}
